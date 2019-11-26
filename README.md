@@ -12,6 +12,7 @@ od = OrderdDict(sorted(word_count.items(), key=lambda t:t[0])) #lambda란 t를 �
 
 
 ---------------
+<워드 카운팅> : list 로 만들어서 Counter 
 from collections import Counter
 
 text = list('Good morning everybody!!') 
