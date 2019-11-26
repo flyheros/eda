@@ -11,4 +11,11 @@ from collections import OrderedDict
 od = OrderdDict(sorted(word_count.items(), key=lambda t:t[0])) #lambda란 t를 인수로 받고 return t[0] 하는 간단한 함수 호출시
 
 
+---------------
+from collections import Counter
+
+text = list('Good morning everybody!!') 
+
+c = Counter(text)# 문자 하나하나씩 
+
 ## 2. 데이터 사용의 기초 Numpy
