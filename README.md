@@ -27,4 +27,40 @@ c = Counter(text)# 문자 하나하나씩
 **rst = [i for i in range(10) if i % 2 ==0]
 **rst = [ i if i%2==0 else 10  for i in range(10) ]
 
+words = 'The quick brown fox jumps over the lazy dog'.split() #2차원 배열
+rst=[[len(w), w.upper(), w.lower()]  for w in words]
+
+
+s1 = 'abc'
+s2 = '12'
+# [['a1', 'b1', 'c1'], ['a2', 'b2', 'c2']]
+rst = [[j+i for j in s1]  for i in s2 ]
+------------
+<enumerate> 리스트값에 인덱스를 붙여 출력: enumerate( ) 함수 
+  
+color = ['red', 'blue', 'white', 'black'] #각 값에 인덱스 달아 dictionary 로 
+d_c = {i:j for i,j in enumerate(color) }
+
+------------
+<zip>: 리스트값을 묶어 출력
+color = ['red', 'blue', 'white', 'black']
+cnt = [6, 2, 3, 7]
+# {'red': 6, 'blue': 2, 'white': 3, 'black': 7}
+col_cnt = {i:j for i, j in zip(color,cnt)}
+# [['red', 6], ['blue', 2], ['white', 3], ['black', 7]]
+col_cnt = [[i, j] for i, j  in zip(color,cnt)]
+  
+------------
+<reduce>
+# reduce 함수 :이전계산값과 다음 인자를 동일하게 계산할때
+from functools import reduce
+num = [1, 2, 3, 4, 5]
+reduce(lambda x,y:x+y, num)
+  
+
+
 ## 2. 데이터 사용의 기초 Numpy
+Numpy : 수치계산
+Pandas: 테이블 데이터
+
+
