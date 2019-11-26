@@ -17,6 +17,14 @@ from collections import Counter
 
 text = list('Good morning everybody!!') 
 
-c = Counter(text)# 문자 하나하나씩 
+c = Counter(text)# 문자 하나하나씩
+
+------------
+
+<list comprehensions>
+  
+**rst = [i for i in range(10)]
+**rst = [i for i in range(10) if i % 2 ==0]
+**rst = [ i if i%2==0 else 10  for i in range(10) ]
 
 ## 2. 데이터 사용의 기초 Numpy
